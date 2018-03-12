@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>应聘人员登记表</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-weui.min.js"></script>
+    <script src="js/table.js"></script>
+</head>
+
+<body>
+    <div class="page-group">
+
+        <div class="page page-current">
+
+            <div class="content">
+
+                <div id="containter">
+
+                    <h2>应聘人员登记表</h2>
+                    <table border="1" class="tab-1">
+                        <tr>
+                            <td>姓名</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>性别</td>
+                            <td>
+                                <input type="text" id='sex' />
+                            </td>
+                            <td>出生年月</td>
+                            <td>
+                                <input type="text" id='csDate' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>名族</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>婚姻状况</td>
+                            <td style="border: none;">
+                                <input type="text" id='marry' />
+                            </td>
+                            <td>政治面貌</td>
+                            <td>
+                                <input type="text" id='zzmm' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>身份证号码</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                            <td>籍贯</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>文化程度</td>
+                            <td>
+                                <input type="text" id='whcd' />
+                            </td>
+                            <td>所学专业</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>技术职称</td>
+                            <td>
+                                <input type="text" id='jszc' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>毕业学校</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                            <td>毕业时间</td>
+                            <td colspan="3">
+                                <input type="text" id="byDate" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>家庭住址</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                            <td>是否应届毕业生</td>
+                            <td colspan="3">
+                                <input type="text" id='bys' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>户口所在地</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                            <td>联系电话</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>档案所在地</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                            <td>档案是否能调入</td>
+                            <td colspan="3">
+                                <input type="text" id='dangan' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>现工作单位</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                            <td>目前收入</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>应聘岗位</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>到职时间</td>
+                            <td>
+                                <input type="text" id='dzsj' />
+                            </td>
+                            <td>期望薪资</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" class="tab-2 tab-s">
+                        <tr>
+                            <td colspan="4" class="tit">个人信息</td>
+                        </tr>
+                        <tr>
+                            <th style="width: 15%;">家庭成员姓名</th>
+                            <th style="width: 15%;">关系</th>
+                            <th style="width: 40%;">地址</th>
+                            <th>联系方式</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>紧急联系人</td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td class="td-s">
+                                <span>关系</span>
+                                <input type="text" class="br" />
+                                <span>联系方式</span>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" class="tab-3 tab-s">
+                        <tr>
+                            <td colspan="4" class="tit">学校及培训情况</td>
+                        </tr>
+                        <tr>
+                            <th style="width: 12%;">由年月</th>
+                            <th style="width: 12%;">至年月</th>
+                            <th>学习及培训单位</th>
+                            <th>学习及培训内容</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id='yDate1' />
+                            </td>
+                            <td>
+                                <input type="text" id='zDate1' />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id='yDate2' />
+                            </td>
+                            <td>
+                                <input type="text" id='zDate2' />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id='yDate3' />
+                            </td>
+                            <td>
+                                <input type="text" id='zDate3' />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" class="tab-4 tab-s">
+                        <tr>
+                            <td colspan="5" class="tit">工作经历</td>
+                        </tr>
+                        <tr>
+                            <th style="width: 12%;">由年月</th>
+                            <th style="width: 12%;">至年月</th>
+                            <th>在职单位及部门</th>
+                            <th style="width: 20%;">在职岗位</th>
+                            <th style="width: 12%;">薪资收入</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id='yDate4' />
+                            </td>
+                            <td>
+                                <input type="text" id='zDate4' />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id='yDate5' />
+                            </td>
+                            <td>
+                                <input type="text" id='zDate5' />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id='yDate6' />
+                            </td>
+                            <td>
+                                <input type="text" id='zDate6' />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id='yDate7' />
+                            </td>
+                            <td>
+                                <input type="text" id='zDate7' />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id='yDate8' />
+                            </td>
+                            <td>
+                                <input type="text" id='zDate8' />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" class="tab-5 tab-s">
+                        <tr>
+                            <td colspan="5" class="tit">获奖情况</td>
+                        </tr>
+                        <tr>
+                            <td class="txts">
+                                <textarea name="" rows="" cols=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Q1：一句话概括自己的特点</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <span>A1：</span>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Q2：简单概括自己的优点</td>
+                        </tr>
+                        <tr>
+                            <td class="txts txts-2">
+                                <span>A2：</span>
+                                <textarea name="" rows="" cols=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Q3：简单概括自己的缺点</td>
+                        </tr>
+                        <tr>
+                            <td class="txts txts-2">
+                                <span>A3：</span>
+                                <textarea name="" rows="" cols=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Q4：选择职业考虑哪些因素</td>
+                        </tr>
+                        <tr>
+                            <td class="txts txts-2">
+                                <span>A4：</span>
+                                <textarea name="" rows="" cols=""></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
